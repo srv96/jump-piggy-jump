@@ -1,2 +1,4 @@
 # jump-piggy-jump
-A AI enabled game which play itself,make mistake and learn from it to imporve itself.
+It's an AI enabled Game in which the player is the computer itself.In this Game A small neural net is integrated So that whenever it loose by doing mistakes.it will learn from it by modifying its weight and improve itself in the next genration.
+
+for more Information See Gentetic Algorithm
