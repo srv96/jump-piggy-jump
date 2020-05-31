@@ -39,7 +39,7 @@ class App:
 
 	def resetState(self):
 		self.score = 0
-		self.bird =[]
+		self.pigs =[]
 		self.trees=[]
 		self.interval=0
 
