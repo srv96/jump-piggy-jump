@@ -36,7 +36,7 @@ class Brain:
 
 	def mutateFunc(self,x):
 		if np.random.random()<0.5:
-			return x + np.random.normal()*0.1
+			return x + np.random.normal()
 		else:
 			return x
 	
