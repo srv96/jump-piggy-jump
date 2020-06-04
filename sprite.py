@@ -47,7 +47,7 @@ class Pig:
 		self.pigframe = [pg.transform.scale(pg.image.load("./resource/pigframes/"+str(i)+".png"),(self.scale,self.scale)) for i in range(20)]
 		
 		if brain == None:
-			self.brain = Brain(2,8,2)
+			self.brain = Brain(1,8,2)
 		else:
 			self.brain = Brain(brain=brain,flag=True)
 
@@ -98,7 +98,7 @@ class Pig:
 			pass
 
 	def think(self,closest_obstacle):
-		input = [closest_obstacle.x-self.x,closest_obstacle.y+closest_obstacle.scale]
+		input = [closest_obstacle.x-self.x]
 		prediction = self.brain.predict(input)
 		if prediction[1][0]>prediction[0][0]:
 			if self.y == 286:

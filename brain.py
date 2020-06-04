@@ -35,8 +35,8 @@ class Brain:
 		self.bias_1 = self.mutateFunc(self.bias_1)
 
 	def mutateFunc(self,x):
-		if np.random.random()<0.5:
-			return x + np.random.normal()
+		if np.random.random()<1:
+			return x + np.random.normal(0,1)
 		else:
 			return x
 	

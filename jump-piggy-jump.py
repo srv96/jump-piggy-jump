@@ -17,7 +17,7 @@ class App:
 		self.min_appear_time,self.max_appear_time =30,60
 		self.obstacle_appear_time = 0
 
-		self.population = 20
+		self.population = 50
 		self.oldPigs = []
 		self.pigs = []
 		self.remaining = self.population
@@ -95,11 +95,6 @@ class App:
 			if closest != None:
 				for pig in self.pigs:
 					pig.think(closest)
-					if self.is_hit(pig,closest):
-						self.oldPigs.append(pig)
-						self.pigs.remove(pig)
-
-				for pig in self.pigs:
 					if self.is_hit(pig,closest):
 						self.oldPigs.append(pig)
 						self.pigs.remove(pig)
